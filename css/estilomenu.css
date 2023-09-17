@@ -12,3 +12,7 @@ img{
     width:10%;
     height: 10%;
 }
+
+.carousel-item{
+    data-bs-interval = "0.5";
+}

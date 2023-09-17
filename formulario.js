@@ -1,24 +1,18 @@
+$("#infoUser").validate()
+
+
 
 $("#infoUser").click(function(){
 
-    
-    $("#infoUser").ready(function(){
+    $("#infoUser").validate({
 
-        $("#infoUser").validate({
-            rules : {
-                nombre: {
-                    required : true
-                },
-                correo: {
-                    required : true
-                },
-                contraseña: {
-                    required : true
-                },
-                recontra: {
-                    required : true
-                }
-            },
-        })
+        messages : {
+            required : "Campo Obligatorio"
+        }
     })
+
+    let nombre = $("#nombre").val()
+    let correo = $("#correo").val()
+    let contraseña = $("#contraseña").val()
+    let recontra = $("#recontra").val()
 })
